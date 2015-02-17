@@ -1,0 +1,14 @@
+<h1>Home Page</h1>
+
+  <%= link_to "New Property", new_property_path %>
+  <br> 
+
+<% @properties.each do |property| %>
+
+  <%= property.first_name %>
+  <br>
+  <%= link_to "View Property", property_path(property) %>
+  <%= link_to "Delete Property", property_path(property), method: "delete" %>
+  <hr>
+
+<% end %>

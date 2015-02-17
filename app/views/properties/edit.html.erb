@@ -1,0 +1,30 @@
+New Property
+<%= form_for @property do |f| %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <br>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <br>
+  <%= f.label :additional_info %>
+  <%= f.text_field :additional_info %>
+  <br>
+  <%= f.label :property_name %>
+  <%= f.text_field :property_name %>
+  <br>
+  <%= f.label :property_type %>
+  <%= f.text_field :property_type %>
+  <br>
+  <%= f.label :housing_type %>
+  <%= f.text_field :housing_type %>
+  <br>
+  <%= f.submit "Submit Property" %>
+
+<% end %>
